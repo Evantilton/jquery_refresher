@@ -15,11 +15,15 @@ function onReady() {
 function generateFunction() {
     console.log(array[0]);
     let number = (Math.floor(Math.random() * array.length));
-    $('#randomitem').remove();
-    $('#randomItem').append(`
+    $('#randomitem').empty();
+    $('#randomItem').html(`
     <div>${(array[number])}</div>
 `
     )
 }
+
+
+
+
 
 
